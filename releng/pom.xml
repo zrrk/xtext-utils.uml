@@ -17,5 +17,6 @@
 		<module>../plugins/org.eclipselabs.xtext.uml.resource</module>
 		<module>../plugins/org.eclipselabs.xtext.uml.resource.ui</module>
 		<module>../features/org.eclipselabs.xtext.uml.feature</module>
+		<module>./eclipse-repository</module>
 	</modules>
 </project>
