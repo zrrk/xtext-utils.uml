@@ -1,4 +1,4 @@
-package org.eclipselabs.xtext.resource.uml;
+package org.eclipselabs.xtext.uml.resource;
 
 import org.eclipse.xtext.resource.generic.AbstractGenericResourceSupport;
 

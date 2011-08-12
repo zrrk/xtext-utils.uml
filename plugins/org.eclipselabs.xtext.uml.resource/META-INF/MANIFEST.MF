@@ -6,5 +6,5 @@ Bundle-Version: 0.1.0.qualifier
 Bundle-RequiredExecutionEnvironment: J2SE-1.5
 Require-Bundle: org.eclipse.xtext;bundle-version="[2.0.0,2.1.0)",
  org.eclipse.uml2.uml;bundle-version="[3.0.0,4.0.0)"
-Export-Package: org.eclipselabs.xtext.resource.uml
 Bundle-Vendor: itemis AG
+Export-Package: org.eclipselabs.xtext.uml.resource

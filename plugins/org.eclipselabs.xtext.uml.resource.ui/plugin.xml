@@ -4,7 +4,7 @@
 	<extension
 	      point="org.eclipse.xtext.extension_resourceServiceProvider">
 	    <resourceServiceProvider
-	          class="org.eclipse.xtext.resource.uml.ui.ExecutableExtensionFactory:org.eclipse.xtext.ui.resource.generic.EmfResourceUIServiceProvider"
+	          class="org.eclipselabs.xtext.uml.resource.ui.ExecutableExtensionFactory:org.eclipse.xtext.ui.resource.generic.EmfResourceUIServiceProvider"
 	          uriExtension="uml">
 	    </resourceServiceProvider>
 	</extension>
