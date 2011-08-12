@@ -10,6 +10,7 @@ package org.eclipselabs.xtext.uml.resource.ui;
 import org.apache.log4j.Logger;
 import org.eclipse.ui.plugin.AbstractUIPlugin;
 import org.eclipse.xtext.ui.shared.SharedStateModule;
+import org.eclipselabs.xtext.uml.resource.UmlRuntimeModule;
 import org.osgi.framework.BundleContext;
 
 import com.google.inject.Guice;
@@ -43,7 +44,7 @@ public class Activator extends AbstractUIPlugin {
 	
 	private void initializeEcoreInjector() {
 		injector = Guice.createInjector(
-				Modules.override(Modules.override(new org.eclipselabs.xtext.uml.resource.UmlRuntimeModule())
+				Modules.override(Modules.override(new UmlRuntimeModule())
 				.with(new UmlUiModule(plugin)))
 				.with(new SharedStateModule()));
 	}
