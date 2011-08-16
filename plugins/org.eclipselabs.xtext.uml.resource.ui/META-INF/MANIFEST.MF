@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: Xtext UML2 Support UI
 Bundle-SymbolicName: org.eclipselabs.xtext.uml.resource.ui;singleton:=true
-Bundle-Version: 0.1.0
+Bundle-Version: 0.2.0.qualifier
 Bundle-RequiredExecutionEnvironment: J2SE-1.5
 Require-Bundle: org.eclipse.uml2.uml.editor;bundle-version="[3.0.0,4.0.0)",
  org.eclipse.xtext.ui;bundle-version="[2.0.0,2.1.0)",

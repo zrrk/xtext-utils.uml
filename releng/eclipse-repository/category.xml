@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
-   <feature url="features/org.eclipselabs.xtext.resource.uml.feature_0.1.0.jar" id="org.eclipselabs.xtext.resource.uml.feature" version="0.1.0">
+   <feature url="features/org.eclipselabs.xtext.resource.uml.feature_0.2.0.qualifier.jar" id="org.eclipselabs.xtext.resource.uml.feature" version="0.2.0.qualifier">
       <category name="eclipselabs-xtext-utils-uml"/>
    </feature>
    <category-def name="eclipselabs-xtext-utils-uml" label="xtext-utils: UML2 support"/>

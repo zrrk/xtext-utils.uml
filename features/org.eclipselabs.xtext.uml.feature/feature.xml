@@ -2,7 +2,7 @@
 <feature
       id="org.eclipselabs.xtext.resource.uml.feature"
       label="Xtext UML2 Support"
-      version="0.1.0"
+      version="0.2.0.qualifier"
       provider-name="itemis AG">
 
    <description url="http://www.example.com/description">
