@@ -71,6 +71,19 @@
         </page>
     </extension>
     <extension
+            point="org.eclipse.ui.propertyPages">
+        <page
+            class="org.xtext.example.umldsl.ui.UmlDslExecutableExtensionFactory:org.eclipse.xtext.ui.editor.preferences.LanguageRootPreferencePage"
+            id="org.xtext.example.umldsl.UmlDsl"
+            name="UmlDsl">
+            <keywordReference id="org.xtext.example.umldsl.ui.keyword_UmlDsl"/>
+            <enabledWhen>
+	            <adapt type="org.eclipse.core.resources.IProject"/>
+			</enabledWhen>
+	        <filter name="projectNature" value="org.eclipse.xtext.ui.shared.xtextNature"/>
+        </page>
+    </extension>
+    <extension
         point="org.eclipse.ui.keywords">
         <keyword
             id="org.xtext.example.umldsl.ui.keyword_UmlDsl"
@@ -145,6 +158,30 @@
             class="org.xtext.example.umldsl.ui.UmlDslExecutableExtensionFactory:org.eclipse.xtext.builder.IXtextBuilderParticipant">
       </participant>
    </extension>
+   <extension
+            point="org.eclipse.ui.preferencePages">
+        <page
+            category="org.xtext.example.umldsl.UmlDsl"
+            class="org.xtext.example.umldsl.ui.UmlDslExecutableExtensionFactory:org.eclipse.xtext.builder.preferences.BuilderPreferencePage"
+            id="org.xtext.example.umldsl.UmlDsl.compiler.preferencePage"
+            name="Compiler">
+            <keywordReference id="org.xtext.example.umldsl.ui.keyword_UmlDsl"/>
+        </page>
+    </extension>
+    <extension
+            point="org.eclipse.ui.propertyPages">
+        <page
+            category="org.xtext.example.umldsl.UmlDsl"
+            class="org.xtext.example.umldsl.ui.UmlDslExecutableExtensionFactory:org.eclipse.xtext.builder.preferences.BuilderPreferencePage"
+            id="org.xtext.example.umldsl.UmlDsl.compiler.propertyPage"
+            name="Compiler">
+            <keywordReference id="org.xtext.example.umldsl.ui.keyword_UmlDsl"/>
+            <enabledWhen>
+	            <adapt type="org.eclipse.core.resources.IProject"/>
+			</enabledWhen>
+	        <filter name="projectNature" value="org.eclipse.xtext.ui.shared.xtextNature"/>
+        </page>
+    </extension>
 
 	<!-- Quick Outline -->
 	<extension
@@ -186,11 +223,10 @@
             class="org.xtext.example.umldsl.ui.UmlDslExecutableExtensionFactory:org.eclipse.xtext.ui.editor.quickfix.MarkerResolutionGenerator">
       </markerResolutionGenerator>
    </extension>
-
    	<!-- Rename Refactoring -->
 	<extension point="org.eclipse.ui.handlers">
 		<handler 
-			class="org.xtext.example.umldsl.ui.UmlDslExecutableExtensionFactory:org.eclipse.xtext.ui.refactoring.ui.RenameElementHandler"
+			class="org.xtext.example.umldsl.ui.UmlDslExecutableExtensionFactory:org.eclipse.xtext.ui.refactoring.ui.IRenameElementHandler"
 			commandId="org.eclipse.xtext.ui.refactoring.RenameElement">
 			<activeWhen>
 				<reference
@@ -212,6 +248,15 @@
          </command>
       </menuContribution>
    </extension>
+   <extension point="org.eclipse.ui.preferencePages">
+	    <page
+	        category="org.xtext.example.umldsl.UmlDsl"
+	        class="org.xtext.example.umldsl.ui.UmlDslExecutableExtensionFactory:org.eclipse.xtext.ui.refactoring.ui.RefactoringPreferencePage"
+	        id="org.xtext.example.umldsl.UmlDsl.refactoring"
+	        name="Refactoring">
+	        <keywordReference id="org.xtext.example.umldsl.ui.keyword_UmlDsl"/>
+	    </page>
+	</extension>
 
   <extension point="org.eclipse.compare.contentViewers">
     <viewer id="org.xtext.example.umldsl.UmlDsl.compare.contentViewers"
